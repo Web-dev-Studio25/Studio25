@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://web-dev-studio25.github.io/Studio25/sitemap.xml

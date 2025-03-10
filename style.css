@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: left;
+    background-color: whitesmoke;
+    padding: 0px;
+    margin-top: auto;
+}
+
+header .highlight {
+    font-family: comic sans ms;
+    font-size: clamp(35px, 10vw, 100px);
+    color: rgb(255, 34, 34);
+    display: inline-block;
+    margin: 0px auto;
+}
+
+header .logo {
+    width: 80px; /* Regola la dimensione dell'immagine secondo le tue esigenze */
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px; /* Spazio tra il testo e l'immagine */
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container2 nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.nav-menu li a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+header .current a {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+header .highlight {
+    color: #ff0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#vetrina {
+    position: relative;
+    min-height: 400px;
+    background: url('immagini/vetrina.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#vetrina .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia l'opacità per regolare la scurezza */
+    z-index: 1;
+}
+
+#vetrina * {
+    position: relative;
+    z-index: 2;
+}
+
+#vetrina h1 {
+    color: white;
+    margin-top: 0;
+    font-size: 36px;
+    max-width: 100%;
+}
+
+#vetrina p {
+    font-size: 20px;
+    max-width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #757575;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555555;
+}
+
+    
+
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666666;
+}
+
+footer {
+    background-color: #757575;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+    }
+
+   
+
+}

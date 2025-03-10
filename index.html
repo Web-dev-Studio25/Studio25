@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio25 - Creazione di siti web professionali e moderni. Offriamo design personalizzati e sviluppo web su misura.">
+    <meta name="keywords" content="web design, sviluppo web, siti web professionali, Studio25, GitHub Pages">
+    <meta name="author" content="Studio25">
+    
+    <!-- Open Graph per Facebook -->
+    <meta property="og:title" content="Studio25 - Siti Web Professionali">
+    <meta property="og:description" content="Realizziamo siti web moderni e performanti su misura per i tuoi clienti.">
+    <meta property="og:image" content="immagini/logostefano.png">
+    <meta property="og:url" content="https://web-dev-studio25.github.io/Studio25/index.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Studio25 - Siti Web Professionali">
+    <meta name="twitter:description" content="Creiamo siti web moderni e ottimizzati per il tuo business.">
+    <meta name="twitter:image" content="immagini/logostefano.png">
+</head>
+
+    <title>web developer studio25</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="immagini/logostefano.png">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div id="branding">
+                <h1><span class="highlight">Web Developer</span> Studio25<img src="immagini/logostefano.png"
+                    alt="Stefano Logo" class="logo"></h1>
+            </div>
+            <div class="container2">
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Chi sono</a></li>
+                        <li><a href="contattami.html">Contattami</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section id="vetrina">
+        <div class="overlay"></div> 
+        <div class="container">
+            <h1>&#x1f680 Dai vita alle tue idee con un sito web su misura!</h1>
+            <p>&#x1f3a8 Navigazione intuitiva, designe mozzafiato e performance al top. Sei pronto a trasformare la tua visione in realtà?</p>
+            <h2>&#x27a1 Contattami e iniziamo oggi stesso!</h2>
+            <div class="button-container">
+                <a href="contattami.html" class="btn">Contattami</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards">
+        <div class="card">
+            <img src="immagini/html.png" alt="Servizio 1">
+            <h3>&#x1f680 Diamo forma al web riga di codice dopo riga!</h3>
+            <p>Con HTML puro creiamo strutture solide e versatili.Ogni sito nasce qui!</p>
+        </div>
+        <div class="card">
+            <img src="immagini/css.png" alt="Servizio 2">
+            <h3>&#x1f3a8 Colori, stile e personalità!</h3>
+            <p>Il CSS trasforma una sempice pagina in un esperienza visiva memorabile. Il tuo brand merita di brillare! </p>
+        </div>
+        <div class="card">
+            <img src="immagini/js1.png" alt="Servizio 3">
+            <h3>&#x26a1 Dinamismo e interazione al massimo!</h3>
+            <p>Con JavaScript , il tuo sito prende vita: effetti, animazione e funzionalità avanzte per un esperienza utente unica.</p>
+        </div>
+        <div class="card">
+            <img src="immagini/phone.jpeg" alt="Servizio 4">
+            <h3>&#x1f4e7 Un modulo di contatto che fa la differenza!</h3>
+            <p>Pesonalizzato, intuitivo e pronto a connetterti con il tuo pubblico.</p>
+            
+        </div>
+    </section>
+
+    
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Dev-web-Studio25. Tutti i diritti riservati.</p>
+        <p>Contattami su:
+            <a href="https://it.fiverr.com/sellers/stefanostomp680/edit?utm_medium=shared&utm_source=copy_link&utm_campaign=seller_profile_self_view&utm_term=R7x2Dy5 target="_blank">Feverr</a>
+            
+            
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

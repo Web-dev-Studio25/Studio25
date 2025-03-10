@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio25 - Creazione di siti web professionali e moderni. Offriamo design personalizzati e sviluppo web su misura.">
+    <meta name="keywords" content="web design, sviluppo web, siti web professionali, Studio25, GitHub Pages">
+    <meta name="author" content="Studio25">
+    
+    <!-- Open Graph per Facebook -->
+    <meta property="og:title" content="Studio25 - Siti Web Professionali">
+    <meta property="og:description" content="Realizziamo siti web moderni e performanti su misura per i tuoi clienti.">
+    <meta property="og:image" content="immagini/logostefano.png">
+    <meta property="og:url" content="https://web-dev-studio25.github.io/Studio25/index.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Studio25 - Siti Web Professionali">
+    <meta name="twitter:description" content="Creiamo siti web moderni e ottimizzati per il tuo business.">
+    <meta name="twitter:image" content="immagini/logostefano.png">
+</head>
+
+    <title>web developer studio25</title>
+    <link rel="stylesheet" href="contattami.css">
+    <link rel="icon" href="immagini/logostefano.png">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div id="branding">
+                <h1><span class="highlight">Web Developer</span> Studio25<img src="immagini/logostefano.png"
+                    alt="Stefano Logo" class="logo"></h1>
+            </div>
+            <div class="container2">
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul id="nav-menu" class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Chi sono</a></li>
+                        <li><a href="contattami.html">Contattami</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="content-container">
+        <div class="box">
+            <img src="immagini/logostefano.png" alt="immagine"></img>
+            <p>Puoi contattarmi via email o rovarmi <br>
+            su <a href="https://it.fiverr.com/sellers/stefanostomp680/edit?utm_medium=shared&utm_source=copy_link&utm_campaign=seller_profile_self_view&utm_term=R7x2Dy5 target="_blank"">fiverr </a>per richiedere un preventivo personalizzato.</p>
+           
+        </div>
+        
+        
+        <div class="form-container">
+            <h2>Contattaci tramite email</h2>
+            <form action="mailto: stompanatostefano8@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn1">Invia</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+    <footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Dev-web-Studio25. Tutti i diritti riservati.</p>
+        <p>Contattami su:
+            <a href="https://it.fiverr.com/sellers/stefanostomp680/edit?utm_medium=shared&utm_source=copy_link&utm_campaign=seller_profile_self_view&utm_term=R7x2Dy5 target="_blank">Feverr</a>
+            
+            
+        </p>
+    </div>
+</footer>
+</body>
+</html>
