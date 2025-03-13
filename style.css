@@ -217,7 +217,7 @@ footer a:hover {
     .nav-menu {
         display: none;
         flex-direction: column;
-        right:0%;
+        width: 100%;
     }
 
     .nav-menu.show {
